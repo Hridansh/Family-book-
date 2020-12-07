@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <title>
+            Project C78
+        </title>
+    </head>
+    <body>
+        <center style="margin-top: 40px;">
+            <h1>
+                My Family Book
+            </h1>
+
+            <img src="" style="width: 45%;" id="family_member_image">
+            <h4 id="family_member_name"></h4>
+            <button onclick="change()">Next</button>
+        </center>
+    </body>
+<script>
+var images = ["https://www.google.com/imgres?imgurl=https%3A%2F%2Fimages-na.ssl-images-amazon.com%2Fimages%2FI%2F51KNpAKei-L.jpg&imgrefurl=https%3A%2F%2Fwww.amazon.in%2FFamily-Book-Todd-Parr%2Fdp%2F0316738964&tbnid=rOTM9irV_vO1NM&vet=12ahUKEwic0JGAx6TtAhXC2HMBHe2UAMcQMygAegUIARDLAQ..i&docid=XaTgINhXyg2u3M&w=500&h=482&q=family%20book&ved=2ahUKEwic0JGAx6TtAhXC2HMBHe2UAMcQMygAegUIARDLAQ", "https://www.google.com/imgres?imgurl=https%3A%2F%2Fcdn1.vectorstock.com%2Fi%2F1000x1000%2F76%2F80%2Fcartoon-dad-vector-10157680.jpg&imgrefurl=https%3A%2F%2Fwww.vectorstock.com%2Froyalty-free-vector%2Fcartoon-dad-vector-10157680&tbnid=262OETUDEd5wYM&vet=12ahUKEwjMwbrrxqTtAhW85XMBHSF2BqMQMygBegUIARC2AQ..i&docid=4a_FWvNUZTWzlM&w=700&h=1080&q=dad%20cartoon%20picture&ved=2ahUKEwjMwbrrxqTtAhW85XMBHSF2BqMQMygBegUIARC2AQ", "https://www.google.com/imgres?imgurl=https%3A%2F%2Fi.pinimg.com%2F736x%2Ff8%2Fa9%2Fdd%2Ff8a9dd5024d6ebed33ae33db724d84e3.jpg&imgrefurl=https%3A%2F%2Fwww.pinterest.com.au%2Fpin%2F711287334879610503%2F&tbnid=ozdc9xRlcACapM&vet=12ahUKEwi9t_aWxaTtAhUKA7cAHcxbBokQMygRegUIARDPAQ..i&docid=nr_-dpU-OhTO4M&w=700&h=1080&q=mom%20cartoon%20picture&ved=2ahUKEwi9t_aWxaTtAhUKA7cAHcxbBokQMygRegUIARDPAQ", "https://ibb.co/wLG2jbd"];
+var names = ["Fmaily Book","Vijay Hirpara (My dad)", "Sejal Tanti (My mother)", "Hridansh Hirpara (Me)"];
+var i = 0;
+function change()
+{
+    i++;
+    var numbers_of_family_member_in_array = "4";
+    if(i > numbers_of_family_member_in_array )
+    {
+        i = 0;
+    }
+    var updatedImage = images[i];
+    var updatedName  = names[i];
+    document.getElementById("family_member_image").src = updatedImage;
+    document.getElementById("family_member_name").innerHTML = updatedName;
+    i++;
+}
+
+</script>
+</html>
